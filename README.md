@@ -1,34 +1,54 @@
-# @pipeworx/mcp-climate
+# mcp-climate
 
-MCP server for the [Open-Meteo Climate API](https://climate-api.open-meteo.com) — long-term climate projections and multi-model temperature comparisons for any location. Free, no auth required.
+Climate MCP — wraps Open-Meteo Climate API (free, no auth)
+
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 250+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
-| `get_climate_projection` | Temperature and precipitation projections (1950-2050) using EC_Earth3P_HR |
-| `compare_models` | Compare temperature projections across three climate models |
 
 ## Quick Start
 
-Add to your MCP client config:
+Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 
 ```json
 {
   "mcpServers": {
     "climate": {
-      "type": "url",
-      "url": "https://gateway.pipeworx.io/climate"
+      "url": "https://gateway.pipeworx.io/climate/mcp"
     }
   }
 }
 ```
 
-## CLI Usage
+Or connect to the full Pipeworx gateway for access to all 250+ data sources:
 
-```bash
-npx @anthropic-ai/mcp-client https://gateway.pipeworx.io/climate
+```json
+{
+  "mcpServers": {
+    "pipeworx": {
+      "url": "https://gateway.pipeworx.io/mcp"
+    }
+  }
+}
 ```
+
+## Using with ask_pipeworx
+
+Instead of calling tools directly, you can ask questions in plain English:
+
+```
+ask_pipeworx({ question: "your question about Climate data" })
+```
+
+The gateway picks the right tool and fills the arguments automatically.
+
+## More
+
+- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [pipeworx.io](https://pipeworx.io)
 
 ## License
 
