@@ -2,12 +2,14 @@
 
 Climate MCP — wraps Open-Meteo Climate API (free, no auth)
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
 | Tool | Description |
 |------|-------------|
+| `get_climate_projection` | Get historical and future temperature and precipitation projections for a location (1950–2050). Returns daily forecasts with temperature, precipitation, and weather conditions. |
+| `compare_models` | Compare temperature projections across climate models for the same location and date range. Returns side-by-side daily mean temperatures to assess model agreement and uncertainty. |
 
 ## Quick Start
 
@@ -23,7 +25,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -47,7 +49,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
