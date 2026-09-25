@@ -3,7 +3,7 @@
   "name": "io.github.pipeworx-io/climate",
   "title": "Climate",
   "description": "Climate MCP — wraps Open-Meteo Climate API (free, no auth)",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "websiteUrl": "https://pipeworx.io/packs/climate",
   "repository": {
     "url": "https://github.com/pipeworx-io/mcp-climate",
