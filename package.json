@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-climate",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Climate MCP — wraps Open-Meteo Climate API (free, no auth)",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "climate",
     "gatewaySlug": "climate",
-    "sourceHash": "v1-6432d6e41beb215334cf1fd308424267f93c73d6c82878da4191dbe485d25ae1",
-    "sourceCommit": "4277282d72f9bf55e548b3799aaf737baf22152f"
+    "sourceHash": "v1-e5bbfe6c0d128cc5efa79529cd7f938d64ba341b32a4c526262011c4c62b0ee9",
+    "sourceCommit": "8cc978183948532674e797c429305c9d8ab2a1c3"
   }
 }
